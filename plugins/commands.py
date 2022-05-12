@@ -49,6 +49,12 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
+            ],[
+            InlineKeyboardButton('📌Group 1', url='https://t.me/M5mediamovies'),
+            InlineKeyboardButton('🍻Group 2', url='https://t.me/M5mediacinemas_Group')
+            ],[
+            InlineKeyboardButton('🛸Ott Movies', url='https://t.me/M5_LinksTG'),
+            InlineKeyboardButton('👨‍🎓Owner', url='https://t.me/M5_Promos')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -79,7 +85,7 @@ async def start(client, message):
             	btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
             except IndexError:
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
-        await client.send_message(
+        await client.send_photo(
             chat_id=message.from_user.id,
             photo="https://telegra.ph/file/85c34241128bcd1e261dc.jpg",
             caption="**Please Join My Updates Channel to use this Bot!**",
@@ -96,6 +102,12 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
+            ],[
+            InlineKeyboardButton('📌Group 1', url='https://t.me/M5mediamovies'),
+            InlineKeyboardButton('🍻Group 2', url='https://t.me/M5mediacinemas_Group')
+            ],[
+            InlineKeyboardButton('🛸Ott Movies', url='https://t.me/M5_LinksTG'),
+            InlineKeyboardButton('👨‍🎓Owner', url='https://t.me/M5_Promos')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
