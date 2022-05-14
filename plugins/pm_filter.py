@@ -142,6 +142,7 @@ async def advantage_spoll_choker(bot, query):
 🔹മലയാളത്തിൽ കമെന്റ് ചെയ്‌താൽ മൂവി കിട്ടില്ല."""
             await asyncio.sleep(10)
             await k.delete()
+            )
 
 
 @Client.on_callback_query()
