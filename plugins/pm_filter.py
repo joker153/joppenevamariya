@@ -2,6 +2,7 @@
 import asyncio
 import re
 import ast
+import t
 
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
@@ -135,7 +136,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
+            k = await query.message.edit(' /uploads/t.mp3')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -770,7 +771,11 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await query.message.reply_voice
+        voice='t',
+        caption=""" 𝙃𝙞, shahi.zee! 𝙄 𝘾𝙤𝙪𝙡𝙙𝙣'𝙩 𝙁𝙞𝙣𝙙 𝙏𝙝𝙚 𝙈𝙤𝙫𝙞𝙚 𝙔𝙤𝙪'𝙧𝙚 𝙇𝙤𝙤𝙠𝙞𝙣𝙜 𝙁𝙤𝙧 🥲🥲 
+
+🔹മലയാളത്തിൽ കമെന്റ് ചെയ്‌താൽ മൂവി കിട്ടില്ല."""
         await asyncio.sleep(8)
         await k.delete()
         return
