@@ -54,7 +54,7 @@ async def start(client, message):
             InlineKeyboardButton('🍻Group 2', url='https://t.me/M5mediacinemas_Group')
             ],[
             InlineKeyboardButton('🛸Ott Movies', url='https://t.me/M5_LinksTG'),
-            InlineKeyboardButton('👨‍🎓Owner', url='https://t.me/M5_Promos')
+            InlineKeyboardButton('👨‍🎓Owner', url='https://t.me/M5admin_bot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
