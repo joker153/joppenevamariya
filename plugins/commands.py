@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/M5mediamovies')
+                InlineKeyboardButton('🤖 Updates', url='http://t.me/+PuolL048PcVmMzRl')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -45,16 +45,10 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/M5mediamovies')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/cineflix_group')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
-            ],[
-            InlineKeyboardButton('📌Group 1', url='https://t.me/M5mediamovies'),
-            InlineKeyboardButton('🍻Group 2', url='https://t.me/M5mediacinemas_Group')
-            ],[
-            InlineKeyboardButton('🛸Ott Movies', url='https://t.me/M5_LinksTG'),
-            InlineKeyboardButton('👨‍🎓Owner', url='https://t.me/M5admin_bot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -98,16 +92,10 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/M5mediamovies')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/cineflix_group')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
-            ],[
-            InlineKeyboardButton('📌Group 1', url='https://t.me/M5mediamovies'),
-            InlineKeyboardButton('🍻Group 2', url='https://t.me/M5mediacinemas_Group')
-            ],[
-            InlineKeyboardButton('🛸Ott Movies', url='https://t.me/M5_LinksTG'),
-            InlineKeyboardButton('👨‍🎓Owner', url='https://t.me/M5_Promos')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
